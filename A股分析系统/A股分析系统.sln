@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A股分析系统", "A股分析系统\A股分析系统.csproj", "{8A786FA3-C157-4A0C-B4F4-B14D3806221C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A786FA3-C157-4A0C-B4F4-B14D3806221C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A786FA3-C157-4A0C-B4F4-B14D3806221C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A786FA3-C157-4A0C-B4F4-B14D3806221C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A786FA3-C157-4A0C-B4F4-B14D3806221C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
