@@ -1,0 +1,8 @@
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\obj\Debug\JianhuaWebSystem.Form1.resources
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\obj\Debug\JianhuaWebSystem.Properties.Resources.resources
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\obj\Debug\JianhuaWebSystem.csproj.GenerateResource.Cache
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\bin\Debug\JianhuaWebSystem.exe
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\bin\Debug\JianhuaWebSystem.pdb
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\obj\Debug\JianhuaWebSystem.exe
+E:\MyGithub\GitProjects\JianhuaWebSystem\JianhuaWebSystem\obj\Debug\JianhuaWebSystem.pdb
