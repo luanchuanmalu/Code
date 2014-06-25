@@ -14,7 +14,9 @@ namespace JianhuaArithmeticStudy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            Application.Run(new FormMD5());
+            //FormMD5
         }
     }
 }

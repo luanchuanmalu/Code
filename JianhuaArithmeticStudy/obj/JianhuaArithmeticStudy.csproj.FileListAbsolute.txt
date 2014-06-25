@@ -6,3 +6,4 @@ E:\MyGithub\GitProjects\JianhuaArithmeticStudy\bin\Debug\JianhuaArithmeticStudy.
 E:\MyGithub\GitProjects\JianhuaArithmeticStudy\bin\Debug\JianhuaArithmeticStudy.pdb
 E:\MyGithub\GitProjects\JianhuaArithmeticStudy\obj\Debug\JianhuaArithmeticStudy.exe
 E:\MyGithub\GitProjects\JianhuaArithmeticStudy\obj\Debug\JianhuaArithmeticStudy.pdb
+E:\MyGithub\GitProjects\JianhuaArithmeticStudy\obj\Debug\JianhuaArithmeticStudy.FormMD5.resources
