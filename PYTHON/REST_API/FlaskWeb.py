@@ -1,4 +1,4 @@
-from flask import Flask, url_for, request, json, response
+from flask import Flask, url_for, request, json
 from functools import wraps
 
 '''test https://segmentfault.com/a/1190000005642670'''
@@ -10,19 +10,19 @@ def api_hello():
     app.logger.warning('warning')
     app.logger.error('screaming bloody murder!')
 
-    return "check your logs\n"'''
+    return "check your logs\n"
 import logging
 file_handler = logging.FileHandler('app.log')
 app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)
-
+'''
 
 '''open authenticate
 @app.route('/secrets')
 @requires_auth
 def api_hello():
     return "Shhh this is top secret spy stuff!"
-    '''
+
 def check_auth(username, password):
     return username == 'admin' and password == 'secret'
 
@@ -43,7 +43,7 @@ def requires_auth(f):
             return authenticate()
         return f(*args, **kwargs)
     return decorated
-
+'''
 '''
 Flask RESTful API
 '''
@@ -102,7 +102,7 @@ def api_message():
 
     else:
         return "415 Unsupported Media Type ;)"
-
+'''
 @app.route('/hello', methods = ['GET'])
 def api_hello():
     data = {
@@ -116,7 +116,9 @@ def api_hello():
     resp = jsonify(data)
     resp.status_code = 200
     return resp
+'''
 
+'''
 @app.errorhandler(404)
 def not_found(error=None):
     message = {
@@ -136,6 +138,6 @@ def api_users(userid):
         return jsonify({userid:users[userid]})
     else:
         return not_found()
-
+'''
 if __name__ == '__main__':
     app.run()
