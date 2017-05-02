@@ -1,7 +1,11 @@
 from flask import Flask, url_for, request, json
+from flask import Response
+from flask import jsonify
 from functools import wraps
 
 '''test https://segmentfault.com/a/1190000005642670'''
+
+app = Flask(__name__)
 
 '''open log
 @app.route('/hello', methods = ['GET'])
@@ -11,11 +15,12 @@ def api_hello():
     app.logger.error('screaming bloody murder!')
 
     return "check your logs\n"
+'''
 import logging
 file_handler = logging.FileHandler('app.log')
 app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)
-'''
+
 
 '''open authenticate
 @app.route('/secrets')
@@ -47,7 +52,7 @@ def requires_auth(f):
 '''
 Flask RESTful API
 '''
-app = Flask(__name__)
+
 
 @app.route('/')
 def api_root():
@@ -72,16 +77,12 @@ def api_hello():
 def api_echo():
     if request.method == 'GET':
         return "ECHO: GET\n"
-
     elif request.method == 'POST':
         return "ECHO: POST\n"
-
     elif request.method == 'PATCH':
         return "ECHO: PACTH\n"
-
     elif request.method == 'PUT':
         return "ECHO: PUT\n"
-
     elif request.method == 'DELETE':
         return "ECHO: DELETE"
 
@@ -102,9 +103,9 @@ def api_message():
 
     else:
         return "415 Unsupported Media Type ;)"
-'''
-@app.route('/hello', methods = ['GET'])
-def api_hello():
+
+@app.route('/helloworld', methods = ['GET'])
+def api_helloworld():
     data = {
         'hello'  : 'world',
         'number' : 3
@@ -116,9 +117,9 @@ def api_hello():
     resp = jsonify(data)
     resp.status_code = 200
     return resp
-'''
 
-'''
+
+
 @app.errorhandler(404)
 def not_found(error=None):
     message = {
@@ -138,6 +139,6 @@ def api_users(userid):
         return jsonify({userid:users[userid]})
     else:
         return not_found()
-'''
+
 if __name__ == '__main__':
     app.run()
