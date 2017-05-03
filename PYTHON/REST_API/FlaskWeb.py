@@ -22,11 +22,8 @@ app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)
 
 
-'''open authenticate
-@app.route('/secrets')
-@requires_auth
-def api_hello():
-    return "Shhh this is top secret spy stuff!"
+'''open authenticate'''
+
 
 def check_auth(username, password):
     return username == 'admin' and password == 'secret'
@@ -48,7 +45,12 @@ def requires_auth(f):
             return authenticate()
         return f(*args, **kwargs)
     return decorated
-'''
+
+@app.route('/secrets')
+@requires_auth
+def api_helloauth():
+    return "Shhh this is top secret spy stuff!"
+    
 '''
 Flask RESTful API
 '''
