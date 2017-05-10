@@ -17,10 +17,17 @@ def api_hello():
     return "check your logs\n"
 '''
 import logging
-file_handler = logging.FileHandler('app.log')
+file_handler = logging.FileHandler('D:\\app.log')
 app.logger.addHandler(file_handler)
 app.logger.setLevel(logging.INFO)
 
+@app.route('/hellolog', methods = ['GET'])
+def api_hellolog():
+    app.logger.info('informing')
+    app.logger.warning('warning')
+    app.logger.error('screaming bloody murder!')
+
+    return "check your logs\n"
 
 '''open authenticate'''
 
@@ -50,7 +57,7 @@ def requires_auth(f):
 @requires_auth
 def api_helloauth():
     return "Shhh this is top secret spy stuff!"
-    
+
 '''
 Flask RESTful API
 '''
@@ -58,6 +65,7 @@ Flask RESTful API
 
 @app.route('/')
 def api_root():
+    app.logger.info('api_root called')
     return 'Welcome'
 
 @app.route('/articles')
@@ -66,10 +74,12 @@ def api_articles():
 
 @app.route('/articles/<articleid>')
 def api_article(articleid):
+    app.logger.info('api_article called')
     return 'You are reading ' + articleid
 
 @app.route('/hello')
 def api_hello():
+    app.logger.info('api_hello called')
     if 'name' in request.args:
         return 'Hello ' + request.args['name']
     else:
@@ -77,6 +87,7 @@ def api_hello():
 
 @app.route('/echo', methods = ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'])
 def api_echo():
+    app.logger.info('api_echo called')
     if request.method == 'GET':
         return "ECHO: GET\n"
     elif request.method == 'POST':
@@ -90,7 +101,7 @@ def api_echo():
 
 @app.route('/messages', methods = ['POST'])
 def api_message():
-
+    app.logger.info('api_message called')
     if request.headers['Content-Type'] == 'text/plain':
         return "Text Message: " + request.data
 
@@ -108,6 +119,7 @@ def api_message():
 
 @app.route('/helloworld', methods = ['GET'])
 def api_helloworld():
+    app.logger.info('api_helloworld called')
     data = {
         'hello'  : 'world',
         'number' : 3
@@ -143,4 +155,4 @@ def api_users(userid):
         return not_found()
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
