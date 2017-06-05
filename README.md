@@ -3,4 +3,5 @@
 
 每天撸点代码放这里，完善技术栈，把小目标列这里，时间留空，搞定一个再写下一个。
 
-1. 用PYTHON和JAVA实现简单的REST API，从MySQL里面拿数据。--
+1. 用PYTHON实现简单的REST API，从MySQL里面拿数据。--20170526搞定
+2. 用JAVA实现简单的REST API，从MySQL里面拿数据。 --
