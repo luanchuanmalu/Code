@@ -5,15 +5,43 @@
      <welcome-file>index.jsp</welcome-file>  
   </welcome-file-list>  
 
+<!-- 配置WEB应用的初始化参数 -->
+   <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/test</param-value>
+   </context-param>
+ 
    <servlet>
    	<servlet-name>HelloWorldServlet</servlet-name>
    	<display-name>HelloWorldServlet</display-name>
    	<description></description>
    	<servlet-class>ServletDemo.HelloWorldServlet</servlet-class>
    </servlet>
+   <servlet>
+   	<description>
+   	</description>
+   	<display-name>demo2</display-name>
+   	<servlet-name>demo2</servlet-name>
+   	<servlet-class>ServletDemo.demo2</servlet-class>
+   </servlet>
+   <servlet>
+   	<description>
+   	</description>
+   	<display-name>demo3</display-name>
+   	<servlet-name>demo3</servlet-name>
+   	<servlet-class>ServletDemo.demo3</servlet-class>
+   </servlet>
 
   <servlet-mapping>
   	<servlet-name>HelloWorldServlet</servlet-name>
-  	<url-pattern>/HelloWorldServlet</url-pattern>
+  	<url-pattern>/d1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>demo2</servlet-name>
+  	<url-pattern>/d2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>demo3</servlet-name>
+  	<url-pattern>/d3</url-pattern>
   </servlet-mapping>
 </web-app>
