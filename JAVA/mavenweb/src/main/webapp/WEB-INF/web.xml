@@ -24,14 +24,6 @@
    	<servlet-name>demo2</servlet-name>
    	<servlet-class>ServletDemo.demo2</servlet-class>
    </servlet>
-   <servlet>
-   	<description>
-   	</description>
-   	<display-name>demo3</display-name>
-   	<servlet-name>demo3</servlet-name>
-   	<servlet-class>ServletDemo.demo3</servlet-class>
-   </servlet>
-
   <servlet-mapping>
   	<servlet-name>HelloWorldServlet</servlet-name>
   	<url-pattern>/d1</url-pattern>
@@ -39,9 +31,5 @@
   <servlet-mapping>
   	<servlet-name>demo2</servlet-name>
   	<url-pattern>/d2</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>demo3</servlet-name>
-  	<url-pattern>/d3</url-pattern>
   </servlet-mapping>
 </web-app>
