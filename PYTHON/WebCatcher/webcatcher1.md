@@ -1,3 +1,5 @@
+http://www.runoob.com/python/python-files-io.html
+
 刚接触python不久，做一个小项目来练练手。前几天看了《战狼2》，发现它在最新上映的电影里面是排行第一的，如下图所示。准备把豆瓣上对它的影评做一个分析。
 
 

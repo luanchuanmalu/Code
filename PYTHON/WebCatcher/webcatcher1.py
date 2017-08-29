@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from urllib import request
 from bs4 import BeautifulSoup as bs
-%matplotlib inline
+
 
 import matplotlib
 matplotlib.rcParams['figure.figsize'] = (10.0, 5.0)
